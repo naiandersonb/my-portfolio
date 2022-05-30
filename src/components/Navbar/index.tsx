@@ -12,8 +12,7 @@ export const Navbar = () => {
 
   const handleDownload = async () => {
     FileSaver.saveAs(
-      'https://github.com/naiandersonb/portfolio/raw/master/src/cv.pdf',
-      'cv.pdf',
+      'https://github.com/naiandersonb/my-portfolio/raw/master/public/cv.pdf',
     );
   };
 
