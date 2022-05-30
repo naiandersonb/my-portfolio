@@ -18,8 +18,7 @@ import {
   SiCss3,
   SiFigma,
   SiHtml5,
-  SiJavascript,
-  SiReact,
+  SiJavascript, SiNextdotjs, SiReact,
   SiTypescript
 } from 'react-icons/si';
 import { Footer } from '../src/components/Footer';
@@ -37,6 +36,11 @@ const Home: NextPage = () => {
       name: 'React JS',
       url: 'https://reactjs.org/',
       icon: <SiReact />,
+    },
+    {
+      name: 'Next JS',
+      url: 'https://nextjs.org/',
+      icon: <SiNextdotjs />,
     },
     {
       name: 'Typescript',
