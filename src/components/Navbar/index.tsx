@@ -3,6 +3,7 @@ import cn from 'classnames';
 import FileSaver from 'file-saver';
 import { useState } from 'react';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
+import { SocialLinks } from '../SocialLinks';
 import styles from './Navbar.module.scss';
 
 export const Navbar = () => {
@@ -41,6 +42,7 @@ export const Navbar = () => {
             Contatos
           </Anchor>
 
+          <SocialLinks direction='row' />
           <div className={styles.button__container}>
             <Button
               color="indigo"

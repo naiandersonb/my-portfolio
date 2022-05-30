@@ -85,6 +85,7 @@ const Home: NextPage = () => {
           <Text className={styles.hero__subtitle}>
             Desenvolvedor Web Front End & UI Design desde de 2020
           </Text>
+          {/* <SocialLinks direction='row' /> */}
         </section>
 
         <section className={styles.projects}>
