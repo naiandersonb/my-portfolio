@@ -37,13 +37,7 @@ export const Navbar = () => {
           size="md"
         />
         <nav className={cn(styles.nav, `${opened ? styles.active : ''}`)}>
-          <Anchor href="/projects" className={styles.nav__link}>
-            Projetos
-          </Anchor>
-          <Anchor href="/about" className={styles.nav__link}>
-            Sobre
-          </Anchor>
-          <Anchor href="/contacts" className={styles.nav__link}>
+          <Anchor href="/#contacts" className={styles.nav__link}>
             Contatos
           </Anchor>
 

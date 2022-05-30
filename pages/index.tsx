@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import {
   Anchor, Badge,
   Card,
@@ -5,7 +6,8 @@ import {
   Group,
   SimpleGrid,
   Text,
-  Title
+  Title,
+  Tooltip
 } from '@mantine/core';
 import type { NextPage } from 'next';
 import Head from 'next/head';
@@ -74,7 +76,7 @@ const Home: NextPage = () => {
       <Navbar />
       <Container size="lg" px="md">
         <section className={styles.hero}>
-          <Badge color="indigo" variant="filled">
+          <Badge color="indigo" >
             Seja bem vindo(a)
           </Badge>
           <Title order={1} className={styles.hero__title}>
@@ -110,13 +112,15 @@ const Home: NextPage = () => {
                 key={index}
                 className={styles.skill__icon}
               >
-                {item.icon}
+                <Tooltip label={item.name} color='indigo'>
+                  {item.icon}
+                </Tooltip>
               </Anchor>
             ))}
           </Group>
         </section>
 
-        <section className={styles.contacts}>
+        <section className={styles.contacts} id='contacts'>
           <Group direction='column'>
             <Title order={3} style={{ color: '#f8f9fa' }}>
               Entre em contato
