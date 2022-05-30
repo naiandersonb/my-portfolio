@@ -1,0 +1,15 @@
+.modal__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+
+  @media(max-width: 945px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
